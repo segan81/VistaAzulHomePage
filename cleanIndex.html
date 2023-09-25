@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b"
+  xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <b:include data="blog" name="all-head-content" />
+  <!--  
+    Document Title
+    =============================================
+    -->
+  <b:if cond="data:blog.pageType == &quot;index&quot;">
+    <title>
+      <data:blog.pageTitle />
+    </title>
+    <b:else />
+    <title>
+      <data:blog.pageName /> -
+      <data:blog.title />
+    </title>
+  </b:if>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" />  
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    referrerpolicy="no-referrer" rel="stylesheet" />    
+  <b:skin>
+    <![CDATA[  
+
+    /* Carousel */
+    .bg-img-1 {
+        background-image:url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgksPnrc1sxOn9Ux3h7zqI5VwLrUiTfhSVYl8LORp2LeNIkTpgZU9W3dI9zMZ2FwNzx1FkbydBTxHxvhKxizRHtTi0tgr7aY79Rmalt8W2d5gpTHbRUjUksJKyE8Idah_janR8TlLESKO6EBKvgN3wDLnvPK5gkjfQaaWu65OCziQkrPCWPHBkW5y8ca1g/s1894/IMG_20230607_101638424.jpg");
+        filter: opacity(90%);
+    }
+    .bg-img-2 {
+        background-image:url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCWr7xHc_5X2tWMZ5jUoHbYhQTn8fRhaR5424dkJaucmejaPNFVGiEGo-xxeWHU7LRkJHxS3rfCnFPEAAQXUGBX_ASQTtLtcmyySurIiEm8Nou1dDo_l00iK2ClSIGN4NwNj7s0mPLcTTe-plUdIw5wSua6FjQqXoL55htd85BEXkMWsS8b82ayS35pmI/s1894/floridablanca-sm-sede.png");
+        filter: opacity(90%);
+    }
+    .carousel-image{
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* BloqueContenido */
+    .bloque{
+      height: 918px;
+    }
+  ]]>
+  </b:skin>
+</head>
+
+<body>
+
+  <main>
+
+    <b:section class="header" id="header">
+      <b:widget id="HTML1" locked="true" title="" type="HTML">
+        <b:includable id="main">
+          <div class="widget-content">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar-example2">
+              <div class="container-fluid">
+                <a class="navbar-brand" expr:href="data:blog.homepageUrl"><img alt=""
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiivcdM-oAkmNq4I3d841CVNp835EFkD58KsIIfFtbJlnOJt8I1aq9jUwZGD3xAJ9haA5mrXIYYahwojmHEnMe74K10EeZfQNUeCwvO2EEt0yxcsG3wZ611WPHtsncFDKNQK4s83CmhGcOQTYy8KmptktyCj9QIAdVtuSwUG3LIH-TbMT0bUd4APuc_Z_U/s320/VistaAzul_2023_mejorada.png"
+                    width="64px" height="64px"/></a>
+                <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                  class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+                  <span class="navbar-toggler-icon" />
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a aria-current="page" class="nav-link active" expr:href="data:blog.homepageUrl">Vista Azul</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                        role="button">
+                        Sectores
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#SectorComercial">Sector Comercial</a></li>
+                        <li><a class="dropdown-item" href="#SectorResidencial">Sector Residencial</a></li>
+                        <li>
+                          <hr class="dropdown-divider" />
+                        </li>
+                        <li><a class="dropdown-item" href="#Parqueaderos">Parqueaderos</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#Noticias">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://forms.gle/pGRPFpecGGWFJJ9v9" target="_blank">PQRS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#Clasificados">Clasificados</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input aria-label="Buscar" class="form-control me-2" placeholder="Buscar" type="search" autocomplete="off" name="q" expr:value="data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;"/>
+                    <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass" /></button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <b:include name="quickedit"/>
+        </b:includable>
+      </b:widget>
+    </b:section>
+      
+    <b:section class="body" id="body">
+      <b:widget id="HTML2" locked="false" title="" type="HTML">
+        <b:includable id="main">
+          <div class="widget-content">
+            <div style="height: 60px;"></div>
+            <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleSlidesOnly">
+              <div class="carousel-inner">
+              <div class="carousel-item carousel-image bg-img-1 active">
+                <div class="carousel-caption d-none d-md-block">
+                <div class="titan-caption">
+                  <div class="caption-content">
+                  <a class="section-scroll btn btn-border-w btn-round"
+                    href="https://drive.google.com/file/d/17Bl1aaCebWaiWHi3xOlaH8OOkuE8AYI3/view?usp=drive_link"
+                    target="_blank">Politica de Tratamiento de datos personales</a>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="carousel-item carousel-image bg-img-2">
+                <div class="carousel-caption d-none d-md-block">
+                <div class="titan-caption">
+                  <div class="caption-content">
+                  <a class="section-scroll btn btn-border-w btn-round"
+                    href="https://drive.google.com/file/d/17Bl1aaCebWaiWHi3xOlaH8OOkuE8AYI3/view?usp=drive_link"
+                    target="_blank">Politica de Tratamiento de datos personales</a>
+                  </div>
+                </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <b:include name="quickedit" />
+        </b:includable>
+      </b:widget>
+
+      <b:widget id="HTML3" locked="false" title="Sectores" type="HTML">
+        <b:includable id="main">
+          <div class="widget-content">
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div style="height: 30px;"></div>
+                </div>
+              </div>
+              <div class="row" id="SectorComercial">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                  <div class="card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCWr7xHc_5X2tWMZ5jUoHbYhQTn8fRhaR5424dkJaucmejaPNFVGiEGo-xxeWHU7LRkJHxS3rfCnFPEAAQXUGBX_ASQTtLtcmyySurIiEm8Nou1dDo_l00iK2ClSIGN4NwNj7s0mPLcTTe-plUdIw5wSua6FjQqXoL55htd85BEXkMWsS8b82ayS35pmI/s1894/floridablanca-sm-sede.png" class="card-img-top" alt="Sector Comercial" />
+                    <div class="card-body">
+                      <h5 class="card-title">Sector Comercial</h5>
+                      <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio id ligula consectetur aliquam. Nam ut lorem non ipsum elementum varius. Quisque in mi mauris. Sed molestie pharetra elit at pretium. Praesent vulputate lobortis ipsum, in dictum nunc tristique ac. Nulla vitae tortor augue. Donec imperdiet lacus in felis sagittis, vitae efficitur tellus mattis. Nulla lobortis sapien sit amet facilisis aliquet. Nunc sit amet massa at urna congue congue eu ac mauris. Vivamus commodo orci justo, vel fermentum nulla luctus sed.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-1"></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div style="height: 30px;"></div>
+                </div>
+              </div>              
+              <div class="row" id="SectorResidencial">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                  <div class="card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgksPnrc1sxOn9Ux3h7zqI5VwLrUiTfhSVYl8LORp2LeNIkTpgZU9W3dI9zMZ2FwNzx1FkbydBTxHxvhKxizRHtTi0tgr7aY79Rmalt8W2d5gpTHbRUjUksJKyE8Idah_janR8TlLESKO6EBKvgN3wDLnvPK5gkjfQaaWu65OCziQkrPCWPHBkW5y8ca1g/s1894/IMG_20230607_101638424.jpg" class="card-img-top" alt="Sector Residencial" />
+                    <div class="card-body">
+                      <h5 class="card-title">Sector Residencial</h5>
+                      <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio id ligula consectetur aliquam. Nam ut lorem non ipsum elementum varius. Quisque in mi mauris. Sed molestie pharetra elit at pretium. Praesent vulputate lobortis ipsum, in dictum nunc tristique ac. Nulla vitae tortor augue. Donec imperdiet lacus in felis sagittis, vitae efficitur tellus mattis. Nulla lobortis sapien sit amet facilisis aliquet. Nunc sit amet massa at urna congue congue eu ac mauris. Vivamus commodo orci justo, vel fermentum nulla luctus sed.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-1"></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div style="height: 30px;"></div>
+                </div>
+              </div>              
+              <!--
+              <div class="row" id="Parqueaderos">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                  <div class="card">
+                    <img src="..." class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                      <h5 class="card-title">Parqueaderos</h5>
+                      <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+                      <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-1"></div>
+              </div>
+              -->
+              <div class="row">
+                <div class="col-sm-12">
+                  <div style="height: 30px;"></div>
+                </div>
+              </div>               
+          </div>
+        </div>
+          <b:include name="quickedit" />
+        </b:includable>
+      </b:widget>
+    </b:section>   
+
+    <div class="row" id="Noticias">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="card">
+          <div class="card-body">
+            <center><h5 class="card-title">Noticias</h5></center>
+            <b:section class="main" id="main" name="Main" showaddelement="no">
+              <b:widget id="Blog1" locked="true" title="Entradas del blog" type="Blog">
+                <b:widget-settings>
+                  <b:widget-setting name="showDateHeader">false</b:widget-setting>
+                  <b:widget-setting name="style.textcolor">#ffffff</b:widget-setting>
+                  <b:widget-setting name="showShareButtons">false</b:widget-setting>
+                  <b:widget-setting name="showCommentLink">false</b:widget-setting>
+                  <b:widget-setting name="style.urlcolor">#ffffff</b:widget-setting>
+                  <b:widget-setting name="showAuthor">false</b:widget-setting>
+                  <b:widget-setting name="style.linkcolor">#ffffff</b:widget-setting>
+                  <b:widget-setting name="style.unittype">TextAndImage</b:widget-setting>
+                  <b:widget-setting name="style.bgcolor">#ffffff</b:widget-setting>
+                  <b:widget-setting name="reactionsLabel"/>
+                  <b:widget-setting name="showAuthorProfile">false</b:widget-setting>
+                  <b:widget-setting name="style.layout">1x1</b:widget-setting>
+                  <b:widget-setting name="showLabels">true</b:widget-setting>
+                  <b:widget-setting name="showLocation">false</b:widget-setting>
+                  <b:widget-setting name="showTimestamp">true</b:widget-setting>
+                  <b:widget-setting name="postsPerAd">1</b:widget-setting>
+                  <b:widget-setting name="showBacklinks">false</b:widget-setting>
+                  <b:widget-setting name="style.bordercolor">#ffffff</b:widget-setting>
+                  <b:widget-setting name="showInlineAds">false</b:widget-setting>
+                  <b:widget-setting name="showReactions">false</b:widget-setting>
+                </b:widget-settings>            
+                <b:includable id="post" var="post">
+                  <b:if cond="!data:mobile">
+                    <div class="blog-posts hfeed">
+                      <b:include data="top" name="status-message"/>
+                      <div class="row">
+                        <b:loop values="data:posts" var="post">
+                          <div class="col-sm-3">
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title"><data:post.title/></h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Subtítulo de la tarjeta</h6>
+                                <div class="card-text"><data:post.body/></div>
+                                <a href="#" class="card-link">Enlace de tarjeta</a>
+                                <a href="#" class="card-link">Otro enlace</a>
+                              </div>
+                            </div>
+                          </div>
+                        </b:loop>
+                      </div>
+                    </div>
+                  </b:if>
+
+                  <!--
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title"><data:post.title/></h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Subtítulo de la tarjeta</h6>
+                      <div class="card-text"><data:post.body/></div>
+                      <a href="#" class="card-link">Enlace de tarjeta</a>
+                      <a href="#" class="card-link">Otro enlace</a>
+                    </div>
+                  </div>
+                  -->
+
+                </b:includable>            
+              </b:widget>     
+            </b:section>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  
+  </main>
+
+  <script type="text/javascript" crossorigin="anonymous"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" />
+</body>
+
+</html>
